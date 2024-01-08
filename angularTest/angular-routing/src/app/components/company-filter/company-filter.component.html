@@ -1,0 +1,13 @@
+<div class="filter__container">
+    <form [formGroup]="filterForm" class="filter__form">
+        <input type="text" name="name" [formControlName]="'companyName'" class="input__controll">
+        <select [formControlName]="'companyType'" style="width: 100px" class="type__controll">
+            <option *ngFor="let type of typeArray" [value]="type">{{type}}</option>
+        </select>
+        <select [formControlName]="'companyIndustry'" style="width: 100px" class="industry__controll">
+            <option *ngFor="let industry of industryAray" [value]="industry">{{industry}}</option>
+        </select>
+        
+        <button type="submit" (click)="applyForm()"  class="form__btn">Применить фильтр</button>
+    </form>
+</div>

@@ -1,0 +1,6 @@
+<div class="container">
+  <ya-map [center]="center" [zoom]="zoom">
+    <ya-placemark *ngFor="let company of companies" [geometry]="[company.latitude, company.longitude]"></ya-placemark>
+  </ya-map>
+</div>
+

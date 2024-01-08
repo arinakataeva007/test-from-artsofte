@@ -1,0 +1,11 @@
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+    background: #2E2E2E;
+    color: #FFF;
+    font-family: Cormorant Garamond;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+}

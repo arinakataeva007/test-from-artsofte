@@ -1,0 +1,8 @@
+<div class="company-item" (click)="openDetailsAboutCompany(company)"  >
+    <img [src]="company.logo" alt="Company Logo" class="logo">
+    <div class="company_descreption">
+        <h3 class="title">{{ company.suffix }}  "{{company.business_name}}"</h3>
+        <p class="parag">{{ company.industry }}</p>
+        <p class="parag">{{ company.type }}</p>
+    </div>
+</div>

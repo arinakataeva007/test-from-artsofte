@@ -1,0 +1,4 @@
+<app-company-sort (sortEvent)="sortCompanies($event)"></app-company-sort>
+<app-company-filter (filterEvent)="onFilterChange($event)"></app-company-filter>
+<app-company-item *ngFor="let company of filteredCompanies" [company]="company"></app-company-item>
+

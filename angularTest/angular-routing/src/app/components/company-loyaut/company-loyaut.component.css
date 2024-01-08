@@ -1,0 +1,22 @@
+.btn{
+    margin: 0;
+    padding: 0;
+    width: 259px;
+    height: 73px;
+    border-style: none;
+    border-radius: 10px;
+    background: #868686;
+    color: #FFF;
+    font-style: normal;
+    font-family: Cormorant Garamond;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.list-btn{
+    margin-left: 230px;
+    font-size: 30px;
+}
+.map-btn{
+    margin-left: 56px;
+    font-size: 30px;
+}
