@@ -7,9 +7,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class CompanySortComponent {
   
-  @Output() sortEvent = new EventEmitter<string>();//передает значение sortEvent родительской компоненте
+  @Output() sortEvent = new EventEmitter<string>();
 
   sort(field: string) {
-    this.sortEvent.emit(field);//когда вызывается метод sort, то он посылает род.компоненте действие sort(field) т.е сортируй по такому-то полю
+    this.sortEvent.emit(field);
   }
 }

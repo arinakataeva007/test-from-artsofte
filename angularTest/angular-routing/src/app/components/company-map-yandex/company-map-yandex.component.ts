@@ -18,7 +18,7 @@ export class CompanyMapYandexComponent implements OnInit{
     this.companyService.getCompanies().subscribe((data: Company[]) => {
       this.companies = data;
       if (this.companies.length > 0) {
-        this.center = [this.companies[0].latitude, this.companies[0].longitude]; // Устанавливаем центр только если массив не пустой
+        this.center = [this.companies[0].latitude, this.companies[0].longitude];
       }
     });
   }

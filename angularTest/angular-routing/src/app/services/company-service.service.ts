@@ -3,7 +3,6 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { Company } from './company';
 import { StringCompany } from './stringCompany';
-import { Coordinates } from './coordinates';
 
 
 @Injectable({
@@ -13,8 +12,6 @@ import { Coordinates } from './coordinates';
 export class CompanyServiceService {
   private apiUrl = 'http://random-data-api.com/api/company/random_company?size=100'; 
   private currentCompany: Company | null = null;
-  private strCompanies: StringCompany[] = [];
-  private coorinates: Coordinates[] = [];
 
   constructor(private http: HttpClient) {
   }
@@ -28,7 +25,7 @@ export class CompanyServiceService {
   getCompanies(): Observable<Company[]> { 
     return this.http.get<Company[]>(this.apiUrl);
   }
-
+  
   getTypeCompany(): Observable<string[]> {
     return this.http.get<StringCompany[]>(this.apiUrl).pipe(
       map((companies: StringCompany[]) => companies.map(company => company.type))
